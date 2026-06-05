@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { readFile, writeFile } from 'node:fs/promises';
 import { extname } from 'node:path';
 import { spawn } from 'node:child_process';
