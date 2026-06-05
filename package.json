@@ -1,0 +1,31 @@
+{
+  "name": "live-translate-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for local speech translation (EN ↔ 中文) via Whisper + Claude + Piper",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "live-translate-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x dist/index.js",
+    "dev": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@huggingface/transformers": "^3.3.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "onnxruntime-node": "^1.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
