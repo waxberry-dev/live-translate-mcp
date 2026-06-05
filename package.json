@@ -1,7 +1,12 @@
 {
   "name": "live-translate-mcp",
-  "version": "0.1.4",
+  "version": "0.1.5",
+  "mcpName": "io.github.jolucashornung/live-translate-mcp",
   "description": "MCP server for local speech translation (EN ↔ 中文) via Whisper + Claude + Piper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/waxberry-dev/live-translate-mcp.git"
+  },
   "license": "MIT",
   "type": "module",
   "bin": {
