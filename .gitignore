@@ -2,3 +2,5 @@ node_modules/
 dist/
 *.js.map
 .env
+mcp-registry-key.pem
+mcp-registry-key.pub.pem
