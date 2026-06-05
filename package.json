@@ -1,6 +1,6 @@
 {
   "name": "live-translate-mcp",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "MCP server for local speech translation (EN ↔ 中文) via Whisper + Claude + Piper",
   "license": "MIT",
   "type": "module",
