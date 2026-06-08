@@ -4,3 +4,5 @@ dist/
 .env
 mcp-registry-key.pem
 mcp-registry-key.pub.pem
+CLAUDE.md
+docs/notes/
