@@ -6,3 +6,6 @@ mcp-registry-key.pem
 mcp-registry-key.pub.pem
 CLAUDE.md
 docs/notes/
+.agents/
+.claude/
+skills-lock.json
