@@ -24,11 +24,14 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.52.0",
-    "@huggingface/transformers": "^3.3.0",
+    "@huggingface/transformers": "3.8.1",
     "@modelcontextprotocol/sdk": "^1.29.0",
     "onnxruntime-node": "1.21.0"
   },
   "pnpm": {
+    "overrides": {
+      "onnxruntime-node": "1.21.0"
+    },
     "onlyBuiltDependencies": ["onnxruntime-node"]
   },
   "devDependencies": {
