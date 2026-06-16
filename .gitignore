@@ -1,6 +1,8 @@
 node_modules/
 dist/
 *.js.map
+tests/*.js
+tests/*.d.ts
 .env
 mcp-registry-key.pem
 mcp-registry-key.pub.pem

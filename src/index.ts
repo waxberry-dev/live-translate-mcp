@@ -5,7 +5,7 @@ import { spawn } from 'node:child_process';
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprotocol/sdk/types.js';
-import { transcribe } from './asr.js';
+import { transcribe, isModelCached } from './asr.js';
 import { synthesize, voicesExist, isBinaryAvailable } from './tts.js';
 import { translateText } from './translate.js';
 
@@ -165,15 +165,17 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
   }
 
   if (name === 'health_check') {
+    const whisper = isModelCached();
     const voices = voicesExist();
     const espeak = isBinaryAvailable('espeak-ng');
 
-    const status = voices && espeak ? 'ok' : 'degraded';
+    const status = whisper && voices && espeak ? 'ok' : 'degraded';
     return {
       content: [{
         type: 'text' as const,
         text: JSON.stringify({
           status,
+          whisper: whisper ? 'ok' : 'missing — will download on first use',
           voices: voices ? 'ok' : 'missing — run: live-translate start',
           espeak_ng: espeak ? 'ok' : 'missing — install: brew install espeak-ng',
         }, null, 2),

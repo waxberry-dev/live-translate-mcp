@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Waxberry" width="80" />
+</p>
+
 # live-translate-mcp
 
 [![live-translate-mcp MCP server](https://glama.ai/mcp/servers/waxberry-dev/live-translate-mcp/badges/score.svg)](https://glama.ai/mcp/servers/waxberry-dev/live-translate-mcp)
@@ -5,6 +9,10 @@
 **Real-time English ↔ Mandarin speech translation for Claude — powered by Whisper, Claude AI, and Piper TTS.**
 
 Give Claude the ability to listen, translate, and speak. `live-translate-mcp` is a [Model Context Protocol (MCP)](https://modelcontextprotocol.io) server that adds speech translation as a native tool inside Claude Desktop and Claude Code. Hand it an audio file, and it transcribes, translates, synthesises, and plays the result — entirely on your machine, with Claude handling the translation.
+
+<p align="center">
+  <img src="assets/demo.svg" alt="live-translate-mcp demo" width="600" />
+</p>
 
 ---
 
