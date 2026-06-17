@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Waxberry" width="80" />
+  <img src="assets/logo.png?v=2" alt="Waxberry" width="80" />
 </p>
 
 # live-translate-mcp
